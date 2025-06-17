@@ -1,6 +1,7 @@
 import sys
 
 import pygame
+
 from constants import *
 from player import Player
 from asteroid import Asteroid
@@ -11,6 +12,8 @@ from shot import Shot
 def main():
     pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    color = (10, 10, 10)
+    screen.fill(color)
     clock = pygame.time.Clock()
 
     updatable = pygame.sprite.Group()
